@@ -1,53 +1,28 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import { fn } from '@storybook/test';
+import type { Meta, StoryObj } from '@storybook/vue3';
 
-import { Button } from "./Button";
+import Button from './Button.vue';
 
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-const meta: Meta<typeof Button> = {
-  title: "Example/Button",
+const meta = {
+  title: 'Example/Button',
   component: Button,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+  tags: ['autodocs'],
   argTypes: {
-    backgroundColor: { control: "color" },
+    size: { control: 'select', options: ['small', 'medium', 'large'] },
+    backgroundColor: { control: 'color' },
   },
-  tags: ["autodocs"],
-  parameters: {
-    myAddonParameter: `
-<MyComponent boolProp scalarProp={1} complexProp={{ foo: 1, bar: '2' }}>
-  <SomeOtherComponent funcProp={(a) => a.id} />
-</MyComponent>
-`,
+  args: {
+    primary: false,
+    onClick: fn(),
   },
-};
+} satisfies Meta<typeof Button>;
 
 export default meta;
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof meta>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 export const Primary: Story = {
-  // More on args: https://storybook.js.org/docs/react/writing-stories/args
   args: {
     primary: true,
-    label: "Button",
-  },
-};
-
-export const Secondary: Story = {
-  args: {
-    label: "Button",
-  },
-};
-
-export const Large: Story = {
-  args: {
-    size: "large",
-    label: "Button",
-  },
-};
-
-export const Small: Story = {
-  args: {
-    size: "small",
-    label: "Button",
+    label: 'Button',
   },
 };
