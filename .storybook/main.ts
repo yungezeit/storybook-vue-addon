@@ -1,4 +1,4 @@
-import type { StorybookConfig } from "@storybook/react-vite";
+import type { StorybookConfig } from "@storybook/vue3-vite";
 import vue from '@vitejs/plugin-vue'
 
 const config: StorybookConfig = {

@@ -4,7 +4,7 @@ export const PANEL_ID = `${ADDON_ID}/panel`;
 export const KEY = `yungezeit-storybook-vue-addon`;
 
 export const EVENTS = {
-  VALUE_CHANGED: `${ADDON_ID}/valueChanged`,
-  RESULT: `${ADDON_ID}/result`,
-  REQUEST: `${ADDON_ID}/request`,
+  MODEL_CHANGED: `${ADDON_ID}/modelChanged`,
+  GET_MODEL_DATA: `${ADDON_ID}/getModelData`,
+  SET_MODEL_DATA: `${ADDON_ID}/SetModelData`,
 };

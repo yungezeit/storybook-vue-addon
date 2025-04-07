@@ -4,3 +4,6 @@ storybook-static/
 build-storybook.log
 .DS_Store
 .env
+.vscode/*
+!.vscode/settings.json.template
+!.vscode/extensions.json

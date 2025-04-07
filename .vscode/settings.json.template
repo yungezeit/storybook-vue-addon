@@ -1,0 +1,22 @@
+{
+  "biome.enabled": true,
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.quickSuggestions": { "strings": "on" },
+  "typescript.preferences.autoImportSpecifierExcludeRegexes": ["^(node:)?os$"],
+
+  "stylelint.validate": ["css", "scss"],
+  "eslint.validate": ["javascript", "javascriptreact", "yaml", "json", "jsonc", "json5", "vue"],
+  "[typescript]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[vue]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  }
+}

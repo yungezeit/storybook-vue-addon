@@ -1,9 +1,7 @@
-export const viteFinal = async (config: any) => {
-  console.log("This addon is augmenting the Vite config");
+export const viteFinal = (config: any) => {
   return config;
 };
 
-export const webpack = async (config: any) => {
-  console.log("This addon is augmenting the Webpack config");
+export const webpack = (config: any) => {
   return config;
 };

@@ -1,14 +1,9 @@
-import type { ProjectAnnotations, Renderer } from "storybook/internal/types";
+import type { ProjectAnnotations, Renderer } from 'storybook/internal/types';
 
-import { KEY } from "./constants";
-import { withGlobals } from "./withGlobals";
-import { withModelValue } from "./withModelValue";
+import { withModelValue } from './withModelValue';
 
 const preview: ProjectAnnotations<Renderer> = {
-  decorators: [withGlobals, withModelValue],
-  initialGlobals: {
-    [KEY]: false,
-  },
+  decorators: [withModelValue],
 };
 
 export default preview;

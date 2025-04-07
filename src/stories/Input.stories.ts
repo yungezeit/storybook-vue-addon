@@ -3,11 +3,13 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import Input from './Input.vue';
 
 const meta = {
-  title: 'Example/Input',
+  title: 'Example/Input (documented)',
   component: Input,
-  tags: ['autodocs'],
-  args: {
+  parameters: {
+    documentationUrl: 'https://www.youtube.com/watch?v=PZoi_z5LR28',
   },
+  tags: ['autodocs'],
+  args: {},
 } satisfies Meta<typeof Input>;
 
 export default meta;
@@ -15,6 +17,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    label: 'Input',
+    label: 'Name',
   },
 };

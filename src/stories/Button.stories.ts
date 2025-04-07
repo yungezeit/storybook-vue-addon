@@ -4,8 +4,11 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import Button from './Button.vue';
 
 const meta = {
-  title: 'Example/Button',
+  title: 'Example/Button (documented)',
   component: Button,
+  parameters: {
+    documentationUrl: 'https://www.youtube.com/watch?v=yEZ3fbUvtyA',
+  },
   tags: ['autodocs'],
   argTypes: {
     size: { control: 'select', options: ['small', 'medium', 'large'] },

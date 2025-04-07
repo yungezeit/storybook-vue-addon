@@ -6,6 +6,7 @@
     "experimentalDecorators": true,
     "incremental": false,
     "isolatedModules": true,
+    "strictNullChecks": true,
     "jsx": "react",
     "lib": ["es2020", "dom"],
     "module": "commonjs",

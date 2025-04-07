@@ -1,38 +1,31 @@
 {
   "name": "@yungezeit/storybook-vue-addon",
+  "type": "module",
   "version": "0.0.0",
   "description": "Storybook addon for Vue codebases",
-  "keywords": [
-    "vue3", "vue", "yungezeit", "storybook-addons"
-  ],
+  "author": "Charles Gruenais",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/yungezeit/storybook-vue-addon"
   },
-  "type": "module",
-  "license": "MIT",
-  "author": "Charles Gruenais",
+  "keywords": ["vue3", "vue", "yungezeit", "storybook-addons"],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
     },
     "./preview": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/preview.js",
-      "require": "./dist/preview.cjs"
+      "require": "./dist/preview.cjs",
+      "import": "./dist/preview.js"
     },
     "./preset": "./dist/preset.cjs",
     "./manager": "./dist/manager.js",
     "./package.json": "./package.json"
   },
-  "files": [
-    "dist/**/*",
-    "README.md",
-    "*.js",
-    "*.d.ts"
-  ],
+  "files": ["dist/**/*", "README.md", "*.js", "*.d.ts"],
   "scripts": {
     "build": "tsup",
     "build:watch": "npm run build -- --watch",
@@ -40,9 +33,11 @@
     "start": "run-p build:watch \"storybook --quiet\"",
     "prerelease": "zx scripts/prepublish-checks.js",
     "release": "npm run build && auto shipit",
-    "eject-ts": "zx scripts/eject-typescript.js",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "storybook": "^8.3.0 || 0.0.0-pr-26654-sha-49d01553"
   },
   "dependencies": {
     "@storybook/icons": "^1.2.10"
@@ -52,14 +47,15 @@
     "@storybook/addon-interactions": "0.0.0-pr-26654-sha-49d01553",
     "@storybook/addon-links": "0.0.0-pr-26654-sha-49d01553",
     "@storybook/blocks": "0.0.0-pr-26654-sha-49d01553",
+    "@storybook/test": "0.0.0-pr-26654-sha-49d01553",
     "@storybook/vue3": "0.0.0-pr-26654-sha-49d01553",
     "@storybook/vue3-vite": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/test": "0.0.0-pr-26654-sha-49d01553",
     "@types/node": "^18.15.0",
     "@types/react": "^18.2.65",
     "@types/react-dom": "^18.2.21",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitejs/plugin-vue": "^5.2.1",
+    "@yungezeit/eslint-typescript": "^0.0.19",
     "auto": "^11.1.1",
     "boxen": "^7.1.1",
     "dedent": "^1.5.1",
@@ -71,12 +67,9 @@
     "storybook": "0.0.0-pr-26654-sha-49d01553",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4",
-    "vue": "^3.5.13",
     "vite": "^5.3.5",
+    "vue": "^3.5.13",
     "zx": "^7.2.3"
-  },
-  "peerDependencies": {
-    "storybook": "^8.3.0 || 0.0.0-pr-26654-sha-49d01553"
   },
   "overrides": {
     "storybook": "0.0.0-pr-26654-sha-49d01553"
@@ -85,24 +78,14 @@
     "access": "public"
   },
   "bundler": {
-    "exportEntries": [
-      "src/index.ts"
-    ],
-    "managerEntries": [
-      "src/manager.tsx"
-    ],
-    "previewEntries": [
-      "src/preview.ts"
-    ],
-    "nodeEntries": [
-      "src/preset.ts"
-    ]
+    "exportEntries": ["src/index.ts"],
+    "managerEntries": ["src/manager.tsx"],
+    "previewEntries": ["src/preview.ts"],
+    "nodeEntries": ["src/preset.ts"]
   },
   "storybook": {
     "displayName": "storybook-vue-addon",
-    "supportedFrameworks": [
-      "vue"
-    ],
-    "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
+    "supportedFrameworks": ["vue"],
+    "icon": "https://private-user-images.githubusercontent.com/16818271/430750865-a31305f5-76f8-4350-b7a8-4c3061143423.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDM5ODQ4MDAsIm5iZiI6MTc0Mzk4NDUwMCwicGF0aCI6Ii8xNjgxODI3MS80MzA3NTA4NjUtYTMxMzA1ZjUtNzZmOC00MzUwLWI3YTgtNGMzMDYxMTQzNDIzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDA3VDAwMDgyMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk5MDNkNzllMjE2Yjk3YmQyNTlmOTkyY2ZhMjc5MjQ2NTRjYjNkMzBmZmNjOGNhYjg2NDhmMGU5MjBkZjE5MjcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.mq7xL04Ua6oECfHVYONIKYbZGP93pYegPMpDA9XLlEI"
   }
 }
