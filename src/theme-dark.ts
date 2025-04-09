@@ -1,6 +1,6 @@
 import { create } from '@storybook/theming/create';
 
-// Based on VSCode's Ayu Dark Bordered theme
+// Based on VSCode's Ayu Mirage Bordered theme
 export default create({
   base: 'dark',
   appBg: '#242936',

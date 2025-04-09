@@ -1,4 +1,9 @@
-# @yungezeit/storybook-vue-addon
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=https://github.com/yungezeit/storybook-vue-addon/tree/main/images/dark/icon.png">
+    <img src=https://github.com/yungezeit/storybook-vue-addon/tree/main/images/light/icon.png" alt="@yungezeit/storybook-vue-addon" width="600" />
+  </picture>
+</p>
 
 (Not so) personal Storybook addon for Vue 3.4+ codebases.
 
@@ -48,6 +53,13 @@ of strings instead of an array of option objects).
 Registering this addon adds a "Vue model" panel within Storybook's addon view which - for the active
 Story's underlying Vue component - lists all detected models and output their current value in
 real-time so that you can see how user interaction impacts the models' raw values.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=https://github.com/yungezeit/storybook-vue-addon/tree/main/images/dark/demo.gif">
+    <img src=https://github.com/yungezeit/storybook-vue-addon/tree/main/images/light/demo.gif"" alt="Usage demo of @yungezeit/storybook-vue-addon" width="600" />
+  </picture>
+</p>
 
 ### Quicklink to external documentation
 

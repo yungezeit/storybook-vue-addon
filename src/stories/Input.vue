@@ -26,7 +26,7 @@ const model = defineModel<string>();
 </template>
 
 <style>
-.input-container {
+.input-container:not(:last-child) {
   margin-block-end: 1rem;
 
   & label {

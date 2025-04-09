@@ -7,7 +7,7 @@ import { ADDON_ID, PANEL_ID, TOOL_ID } from './constants';
 import themeDark from './theme-dark';
 import themeLight from './theme-light';
 
-const dark = false;
+const dark = true;
 
 const theme = dark ? themeDark : themeLight;
 addons.setConfig({ theme });

@@ -3,8 +3,15 @@
 }
 
 :root {
-  --color-text: #fff;
+  /* Light */
+  /*
+  --color-text: #aeaeae;
   --color-border: #6f6e87;
+  */
+
+  /* Dark */
+  --color-text: #d3cbcb;
+  --color-border: #505769;
 }
 
 label {
