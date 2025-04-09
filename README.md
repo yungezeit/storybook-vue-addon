@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yungezeit/storybook-vue-addon/tree/main/images/dark/header.png">
-    <img src="https://github.com/yungezeit/storybook-vue-addon/tree/main/images/light/header.png" alt="@yungezeit/storybook-vue-addon" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yungezeit/storybook-vue-addon/refs/heads/main/images/dark/header.png">
+    <img src="https://raw.githubusercontent.com/yungezeit/storybook-vue-addon/refs/heads/main/images/light/header.png" alt="@yungezeit/storybook-vue-addon" />
   </picture>
 </p>
 
@@ -56,8 +56,8 @@ real-time so that you can see how user interaction impacts the models' raw value
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yungezeit/storybook-vue-addon/tree/main/images/dark/demo.gif">
-    <img src="https://github.com/yungezeit/storybook-vue-addon/tree/main/images/light/demo.gif" alt="Usage demo of @yungezeit/storybook-vue-addon"  />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yungezeit/storybook-vue-addon/refs/heads/main/images/dark/demo.gif">
+    <img src="https://raw.githubusercontent.com/yungezeit/storybook-vue-addon/refs/heads/main/images/light/demo.gif" alt="Usage demo of @yungezeit/storybook-vue-addon"  />
   </picture>
 </p>
 
