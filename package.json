@@ -86,6 +86,6 @@
   "storybook": {
     "displayName": "storybook-vue-addon",
     "supportedFrameworks": ["vue"],
-    "icon": "https://private-user-images.githubusercontent.com/16818271/430750865-a31305f5-76f8-4350-b7a8-4c3061143423.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDM5ODQ4MDAsIm5iZiI6MTc0Mzk4NDUwMCwicGF0aCI6Ii8xNjgxODI3MS80MzA3NTA4NjUtYTMxMzA1ZjUtNzZmOC00MzUwLWI3YTgtNGMzMDYxMTQzNDIzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDA3VDAwMDgyMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTk5MDNkNzllMjE2Yjk3YmQyNTlmOTkyY2ZhMjc5MjQ2NTRjYjNkMzBmZmNjOGNhYjg2NDhmMGU5MjBkZjE5MjcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.mq7xL04Ua6oECfHVYONIKYbZGP93pYegPMpDA9XLlEI"
+    "icon": "https://raw.githubusercontent.com/yungezeit/storybook-vue-addon/refs/heads/main/images/icon.png"
   }
 }
