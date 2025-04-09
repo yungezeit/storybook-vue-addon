@@ -20,7 +20,6 @@ const ModelLayout = styled('div')({
 });
 
 const RawValue = styled('div')({
-  background: 'rgba(0, 0, 0, 0.125)',
   padding: '0.325rem',
   borderRadius: '4px',
 });
@@ -39,7 +38,7 @@ export const Model: React.FC<ModelProps> = memo(function Model({ modifiers, name
           ))}
         </div>
       )}
-      <RawValue>
+      <RawValue style={{ background: _theme.barBg }}>
         {value === undefined ? (
           <SyntaxHighlighter language="text">undefined</SyntaxHighlighter>
         ) : (

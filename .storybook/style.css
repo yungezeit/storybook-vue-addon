@@ -1,0 +1,22 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --color-text: #fff;
+  --color-border: #6f6e87;
+}
+
+label {
+  margin-inline: 0.5rem;
+  color: var(--color-text);
+}
+
+input {
+  color: var(--color-text);
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  padding: 0.325rem;
+  border-radius: 6px;
+  font-size: 1rem;
+}

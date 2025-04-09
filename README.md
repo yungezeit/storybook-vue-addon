@@ -2,9 +2,7 @@
 
 (Not so) personal Storybook addon for Vue 3.4+ codebases.
 
-## Installation
-
-First, install the package.
+## Install
 
 ```sh
 # Using npm
@@ -17,7 +15,9 @@ pnpm add -D @yungezeit/storybook-vue-addon
 bun add -D @yungezeit/storybook-vue-addon
 ```
 
-Then, register it as an addon in `.storybook/main.(js|ts)`.
+## Usage
+
+Register it as an addon in `.storybook/main.(js|ts)`.
 
 ```js
 import type { StorybookConfig } from '@storybook/vue3-vite';
@@ -59,7 +59,7 @@ though, but still ended up including it in this addon for some reason :-)
 ```js
 // Button.stories.ts
 import type { Meta } from '@storybook/vue3-vite';
-import { Button } from './Button.vue';
+import Button from './Button.vue';
 
 const meta: Meta<typeof Button> = {
   component: Button,
