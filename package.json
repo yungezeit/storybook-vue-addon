@@ -1,7 +1,7 @@
 {
   "name": "@yungezeit/storybook-vue-addon",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Storybook addon for Vue codebases",
   "author": "Charles Gruenais",
   "license": "MIT",
@@ -9,7 +9,12 @@
     "type": "git",
     "url": "https://github.com/yungezeit/storybook-vue-addon"
   },
-  "keywords": ["vue3", "vue", "yungezeit", "storybook-addons"],
+  "keywords": [
+    "vue3",
+    "vue",
+    "yungezeit",
+    "storybook-addons"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -25,7 +30,12 @@
     "./manager": "./dist/manager.js",
     "./package.json": "./package.json"
   },
-  "files": ["dist/**/*", "README.md", "*.js", "*.d.ts"],
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "*.js",
+    "*.d.ts"
+  ],
   "scripts": {
     "build": "tsup",
     "build:watch": "pnpm build -- --watch",
@@ -77,14 +87,24 @@
     "access": "public"
   },
   "bundler": {
-    "exportEntries": ["src/index.ts"],
-    "managerEntries": ["src/manager.tsx"],
-    "previewEntries": ["src/preview.ts"],
-    "nodeEntries": ["src/preset.ts"]
+    "exportEntries": [
+      "src/index.ts"
+    ],
+    "managerEntries": [
+      "src/manager.tsx"
+    ],
+    "previewEntries": [
+      "src/preview.ts"
+    ],
+    "nodeEntries": [
+      "src/preset.ts"
+    ]
   },
   "storybook": {
     "displayName": "storybook-vue-addon",
-    "supportedFrameworks": ["vue"],
+    "supportedFrameworks": [
+      "vue"
+    ],
     "icon": "https://raw.githubusercontent.com/yungezeit/storybook-vue-addon/refs/heads/main/images/icon.png"
   }
 }
