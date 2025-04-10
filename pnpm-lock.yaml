@@ -27,6 +27,9 @@ importers:
       '@storybook/test':
         specifier: 0.0.0-pr-26654-sha-49d01553
         version: 0.0.0-pr-26654-sha-49d01553(storybook@0.0.0-pr-26654-sha-49d01553(@babel/preset-env@7.26.9(@babel/core@7.26.10)))
+      '@storybook/theming':
+        specifier: 0.0.0-pr-26654-sha-49d01553
+        version: 0.0.0-pr-26654-sha-49d01553(storybook@0.0.0-pr-26654-sha-49d01553(@babel/preset-env@7.26.9(@babel/core@7.26.10)))
       '@storybook/vue3':
         specifier: 0.0.0-pr-26654-sha-49d01553
         version: 0.0.0-pr-26654-sha-49d01553(storybook@0.0.0-pr-26654-sha-49d01553(@babel/preset-env@7.26.9(@babel/core@7.26.10)))(vue@3.5.13(typescript@5.8.3))
@@ -1541,10 +1544,10 @@ packages:
     peerDependencies:
       storybook: ^0.0.0-pr-26654-sha-49d01553
 
-  '@storybook/theming@0.0.0-pr-30711-sha-c594b56f':
-    resolution: {integrity: sha512-1dvbIOb2txAR4fzTu62CGP08NMW4MOERnfg/MTP/JvjPailMjVtGkgHnFmQlppnYhBISV20a+BJF0fJ5tb3K1g==}
+  '@storybook/theming@0.0.0-pr-26654-sha-49d01553':
+    resolution: {integrity: sha512-ikPXhol/BbUHQbpP5FOQtHxwI60SKNBd3c+Bbo0ZIsZvTHTFVyu7WMXppYzASWqAY1xx40TLBoFSMG5viElEqQ==}
     peerDependencies:
-      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0 || ^9.0.0-0
+      storybook: ^0.0.0-pr-26654-sha-49d01553
 
   '@storybook/vue3-vite@0.0.0-pr-26654-sha-49d01553':
     resolution: {integrity: sha512-Gt+d33S+cXgafIqL5U6h/5/OClXR2SfiQwfpbhEK4w1UGl7Mc0kCQn7Q+7qvZYXAuAe/1uUk8MAGKzhXVCQRKg==}
@@ -6401,7 +6404,7 @@ snapshots:
       - jest
       - vitest
 
-  '@storybook/theming@0.0.0-pr-30711-sha-c594b56f(storybook@0.0.0-pr-26654-sha-49d01553(@babel/preset-env@7.26.9(@babel/core@7.26.10)))':
+  '@storybook/theming@0.0.0-pr-26654-sha-49d01553(storybook@0.0.0-pr-26654-sha-49d01553(@babel/preset-env@7.26.9(@babel/core@7.26.10)))':
     dependencies:
       storybook: 0.0.0-pr-26654-sha-49d01553(@babel/preset-env@7.26.9(@babel/core@7.26.10))
 
@@ -6428,7 +6431,7 @@ snapshots:
       '@storybook/global': 5.0.0
       '@storybook/manager-api': 0.0.0-pr-30711-sha-c594b56f(storybook@0.0.0-pr-26654-sha-49d01553(@babel/preset-env@7.26.9(@babel/core@7.26.10)))
       '@storybook/preview-api': 0.0.0-pr-30711-sha-c594b56f(storybook@0.0.0-pr-26654-sha-49d01553(@babel/preset-env@7.26.9(@babel/core@7.26.10)))
-      '@storybook/theming': 0.0.0-pr-30711-sha-c594b56f(storybook@0.0.0-pr-26654-sha-49d01553(@babel/preset-env@7.26.9(@babel/core@7.26.10)))
+      '@storybook/theming': 0.0.0-pr-26654-sha-49d01553(storybook@0.0.0-pr-26654-sha-49d01553(@babel/preset-env@7.26.9(@babel/core@7.26.10)))
       '@vue/compiler-core': 3.5.13
       lodash: 4.17.21
       storybook: 0.0.0-pr-26654-sha-49d01553(@babel/preset-env@7.26.9(@babel/core@7.26.10))

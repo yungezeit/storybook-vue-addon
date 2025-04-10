@@ -46,6 +46,7 @@ export const withModelValue: DecoratorFunction = (storyFn, context) => {
     (acc, { name }) => {
       acc[name] = context.args[name];
       acc[`onUpdate:${name}`] = (value: any) => {
+        context.args[name] = value;
         emit(EVENTS.MODEL_CHANGED, name, value);
       };
       return acc;

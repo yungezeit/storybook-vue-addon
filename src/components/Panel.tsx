@@ -1,8 +1,8 @@
 import React, { Fragment, memo, useState } from 'react';
-import { AddonPanel, Code, EmptyTabContent, Link } from 'storybook/internal/components';
+import { Code, EmptyTabContent, Link } from 'storybook/internal/components';
 
 import { useChannel } from 'storybook/internal/manager-api';
-import { styled, useTheme } from 'storybook/internal/theming';
+import { styled } from 'storybook/internal/theming';
 
 import { Model, type ModelState } from './Model';
 import { EVENTS } from '../constants';
@@ -26,7 +26,6 @@ const Container = styled.div(({ theme }) => ({
 }));
 
 export const Panel: React.FC<PanelProps> = memo(function MyPanel(props) {
-  const theme = useTheme();
   const [modelsState, setModelsState] = useState<ModelsState>();
 
   useChannel({
