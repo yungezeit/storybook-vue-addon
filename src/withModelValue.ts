@@ -16,9 +16,12 @@ export const withModelValue: DecoratorFunction = (storyFn, context) => {
   const component = context.component as DefineComponent;
   const componentEmits = component.emits;
   const componentProps = component.props ?? {};
-  const emits: string[] = !Array.isArray(componentEmits) ? [componentEmits] : componentEmits;
+  const emits: (string | undefined)[] = !Array.isArray(componentEmits)
+    ? [componentEmits]
+    : componentEmits;
+
   const models = emits.reduce<ComponentModel[]>((acc, vueEmit) => {
-    if (!vueEmit.startsWith('update:')) return acc;
+    if (!vueEmit?.startsWith('update:')) return acc;
     const [, modelName] = vueEmit.split('update:');
     const modifiers = Object.keys(componentProps[`${modelName}Modifiers`] ?? {});
     acc.push({ name: modelName, modifiers });
