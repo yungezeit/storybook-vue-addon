@@ -56,14 +56,14 @@
     "@storybook/addon-docs": "10.0.2",
     "@storybook/addon-links": "10.0.2",
     "@storybook/vue3-vite": "10.0.2",
-    "@types/node": "^18.15.0",
+    "@types/node": "^20",
     "@types/react": "^18.2.65",
     "@types/react-dom": "^18.2.21",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react": "^4.7.0",
     "@vitejs/plugin-vue": "^5.2.1",
-    "@yungezeit/eslint-typescript": "^0.0.19",
+    "@yungezeit/eslint-typescript": "^0.0.23",
     "auto": "^11.1.1",
-    "boxen": "^7.1.1",
+    "boxen": "^8.0.1",
     "dedent": "^1.5.1",
     "eslint-plugin-storybook": "10.0.2",
     "prettier": "^3.3.3",
@@ -73,9 +73,9 @@
     "storybook": "10.0.2",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4",
-    "vite": "^5.3.5",
+    "vite": "^7.1.12",
     "vue": "^3.5.13",
-    "zx": "^7.2.3"
+    "zx": "^8.8.5"
   },
   "overrides": {
     "storybook": "0.0.0-pr-26654-sha-49d01553"
