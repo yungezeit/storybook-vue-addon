@@ -77,9 +77,6 @@
     "vue": "^3.5.13",
     "zx": "^8.8.5"
   },
-  "overrides": {
-    "storybook": "0.0.0-pr-26654-sha-49d01553"
-  },
   "publishConfig": {
     "access": "public"
   },
