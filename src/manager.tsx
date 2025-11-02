@@ -1,5 +1,5 @@
 import React from 'react';
-import { addons, types, useParameter } from 'storybook/internal/manager-api';
+import { addons, types, useParameter } from 'storybook/manager-api';
 
 import { Panel } from './components/Panel';
 import { Tool } from './components/Tool';
@@ -18,7 +18,7 @@ addons.register(ADDON_ID, (api) => {
 
   addons.add(PANEL_ID, {
     type: types.PANEL,
-    title: 'Vue model',
+    title: 'Vue models',
     match: ({ viewMode }) => viewMode === 'story',
     render: ({ active }) => <Panel active={active} />,
   });

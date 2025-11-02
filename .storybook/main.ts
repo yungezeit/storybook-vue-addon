@@ -3,19 +3,13 @@ import vue from '@vitejs/plugin-vue'
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
-  addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
-    "./local-preset.js",
-  ],
+  addons: ["@storybook/addon-links", import.meta.resolve("./local-preset.ts"), "@storybook/addon-docs"],
+
   framework: {
     name: "@storybook/vue3-vite",
     options: {},
   },
-  docs: {
-    autodocs: "tag",
-  },
+
   async viteFinal(config) {
     const { mergeConfig } = await import('vite');
     return mergeConfig(config, {
@@ -24,6 +18,6 @@ const config: StorybookConfig = {
         include: ['storybook-dark-mode'],
       },
     });
-  },
+  }
 };
 export default config;

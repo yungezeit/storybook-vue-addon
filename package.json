@@ -9,24 +9,33 @@
     "type": "git",
     "url": "https://github.com/yungezeit/storybook-vue-addon"
   },
-  "keywords": ["vue3", "vue", "yungezeit", "storybook-addons"],
+  "keywords": [
+    "vue3",
+    "vue",
+    "yungezeit",
+    "storybook-addon"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.js"
+      "default": "./dist/index.js"
     },
     "./preview": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/preview.cjs",
-      "import": "./dist/preview.js"
+      "types": "./dist/preview.d.ts",
+      "default": "./dist/preview.js"
     },
-    "./preset": "./dist/preset.cjs",
+    "./preset": "./dist/preset.js",
     "./manager": "./dist/manager.js",
     "./package.json": "./package.json"
   },
-  "files": ["dist/**/*", "README.md", "*.js", "*.d.ts"],
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "*.js",
+    "*.d.ts"
+  ],
   "scripts": {
+    "prebuild": "node -e \"fs.rmSync('./dist', { recursive: true, force: true })\"",
     "build": "tsup",
     "build:watch": "pnpm build -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -37,20 +46,16 @@
     "build-storybook": "storybook build"
   },
   "peerDependencies": {
-    "storybook": "^8.3.0 || 0.0.0-pr-26654-sha-49d01553"
+    "storybook": "^10.0.0"
   },
   "dependencies": {
     "@storybook/icons": "^1.2.10"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/addon-interactions": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/addon-links": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/blocks": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/test": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/vue3": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/vue3-vite": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/theming": "0.0.0-pr-26654-sha-49d01553",
+    "@biomejs/biome": "2.3.2",
+    "@storybook/addon-docs": "10.0.2",
+    "@storybook/addon-links": "10.0.2",
+    "@storybook/vue3-vite": "10.0.2",
     "@types/node": "^18.15.0",
     "@types/react": "^18.2.65",
     "@types/react-dom": "^18.2.21",
@@ -60,11 +65,12 @@
     "auto": "^11.1.1",
     "boxen": "^7.1.1",
     "dedent": "^1.5.1",
+    "eslint-plugin-storybook": "10.0.2",
     "prettier": "^3.3.3",
     "prompts": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "storybook": "0.0.0-pr-26654-sha-49d01553",
+    "storybook": "10.0.2",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4",
     "vite": "^5.3.5",
@@ -78,14 +84,24 @@
     "access": "public"
   },
   "bundler": {
-    "exportEntries": ["src/index.ts"],
-    "managerEntries": ["src/manager.tsx"],
-    "previewEntries": ["src/preview.ts"],
-    "nodeEntries": ["src/preset.ts"]
+    "exportEntries": [
+      "src/index.ts"
+    ],
+    "managerEntries": [
+      "src/manager.tsx"
+    ],
+    "previewEntries": [
+      "src/preview.ts"
+    ],
+    "nodeEntries": [
+      "src/preset.ts"
+    ]
   },
   "storybook": {
     "displayName": "storybook-vue-addon",
-    "supportedFrameworks": ["vue"],
+    "supportedFrameworks": [
+      "vue"
+    ],
     "icon": "https://raw.githubusercontent.com/yungezeit/storybook-vue-addon/refs/heads/main/images/icon.png"
   }
 }

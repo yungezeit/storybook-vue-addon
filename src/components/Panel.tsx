@@ -1,8 +1,8 @@
 import React, { Fragment, memo, useState } from 'react';
 import { Code, EmptyTabContent, Link } from 'storybook/internal/components';
 
-import { useChannel } from 'storybook/internal/manager-api';
-import { styled } from 'storybook/internal/theming';
+import { useChannel } from 'storybook/manager-api';
+import { styled } from 'storybook/theming';
 
 import { Model, type ModelState } from './Model';
 import { EVENTS } from '../constants';
