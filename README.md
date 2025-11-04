@@ -40,7 +40,7 @@ export default config;
 
 ## Features
 
-### Vue model panel
+### Vue models panel
 
 Vue components you're testing/playing with in Storybook may expose one or multiple models (_a.k.a._
 two-way bindings) using either Vue's `defineModel` macro or its prop and update event equivalent

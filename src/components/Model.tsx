@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import type { ComponentModel } from 'src/withModelValue';
 import { Badge, SyntaxHighlighter } from 'storybook/internal/components';
-import { styled, useTheme } from 'storybook/internal/theming';
+import { styled, useTheme } from 'storybook/theming';
 
 export interface ModelState extends ComponentModel {
   /** Model value. */
@@ -29,7 +29,7 @@ export const Model: React.FC<ModelProps> = memo(function Model({ modifiers, name
   return (
     <ModelLayout style={{ borderColor: _theme.appBorderColor }}>
       <ModelTitle>{name}</ModelTitle>
-      {modifiers?.length > 0 && (
+      {modifiers.length > 0 && (
         <div>
           {modifiers.map((modifier, i) => (
             <Badge key={i} status="neutral">

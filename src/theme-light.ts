@@ -1,4 +1,4 @@
-import { create } from '@storybook/theming/create';
+import { create } from 'storybook/theming';
 
 // Based on VSCode's Visual Studio Light theme
 export default create({

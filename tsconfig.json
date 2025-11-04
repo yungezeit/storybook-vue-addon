@@ -1,19 +1,25 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
     "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "incremental": false,
-    "isolatedModules": true,
-    "strictNullChecks": true,
-    "jsx": "react",
-    "lib": ["es2020", "dom"],
-    "module": "commonjs",
-    "noImplicitAny": true,
-    "rootDir": "./src",
     "skipLibCheck": true,
-    "target": "ES2020"
+    "target": "esnext",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "module": "preserve",
+    "jsx": "react",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "strict": true,
+    "outDir": "dist",
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noImplicitAny": true,
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "baseUrl": ".",
+    "rootDir": "."
   },
-  "include": ["src/**/*"]
+  "exclude": ["dist", ".storybook/local-preset.ts"],
+  "include": ["src/**/*", "vite.config.ts", "tsup.config.ts", ".storybook/**/*"]
 }

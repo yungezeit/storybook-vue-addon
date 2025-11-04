@@ -1,5 +1,5 @@
 import React from 'react';
-import { addons, types, useParameter } from 'storybook/internal/manager-api';
+import { addons, types, useParameter } from 'storybook/manager-api';
 
 import { Panel } from './components/Panel';
 import { Tool } from './components/Tool';
@@ -11,14 +11,14 @@ addons.register(ADDON_ID, (api) => {
     title: 'Open documentation',
     match: ({ viewMode }) => !!viewMode?.match(/^(story)$/),
     render: () => {
-      const documentationUrl = useParameter('documentationUrl', undefined);
+      const documentationUrl = useParameter<string | undefined>('documentationUrl', undefined);
       return documentationUrl && <Tool api={api} url={documentationUrl} />;
     },
   });
 
   addons.add(PANEL_ID, {
     type: types.PANEL,
-    title: 'Vue model',
+    title: 'Vue models',
     match: ({ viewMode }) => viewMode === 'story',
     render: ({ active }) => <Panel active={active} />,
   });
