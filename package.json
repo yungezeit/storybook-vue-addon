@@ -13,20 +13,18 @@
     "vue3",
     "vue",
     "yungezeit",
-    "storybook-addons"
+    "storybook-addon"
   ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.js"
+      "default": "./dist/index.js"
     },
     "./preview": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/preview.cjs",
-      "import": "./dist/preview.js"
+      "types": "./dist/preview.d.ts",
+      "default": "./dist/preview.js"
     },
-    "./preset": "./dist/preset.cjs",
+    "./preset": "./dist/preset.js",
     "./manager": "./dist/manager.js",
     "./package.json": "./package.json"
   },
@@ -37,6 +35,7 @@
     "*.d.ts"
   ],
   "scripts": {
+    "prebuild": "node -e \"fs.rmSync('./dist', { recursive: true, force: true })\"",
     "build": "tsup",
     "build:watch": "pnpm build -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -47,42 +46,36 @@
     "build-storybook": "storybook build"
   },
   "peerDependencies": {
-    "storybook": "^8.3.0 || 0.0.0-pr-26654-sha-49d01553"
+    "storybook": "^10.0.0"
   },
   "dependencies": {
     "@storybook/icons": "^1.2.10"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/addon-interactions": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/addon-links": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/blocks": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/test": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/vue3": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/vue3-vite": "0.0.0-pr-26654-sha-49d01553",
-    "@storybook/theming": "0.0.0-pr-26654-sha-49d01553",
-    "@types/node": "^18.15.0",
+    "@biomejs/biome": "2.3.2",
+    "@storybook/addon-docs": "10.0.2",
+    "@storybook/addon-links": "10.0.2",
+    "@storybook/vue3-vite": "10.0.2",
+    "@types/node": "^20",
     "@types/react": "^18.2.65",
     "@types/react-dom": "^18.2.21",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react": "^4.7.0",
     "@vitejs/plugin-vue": "^5.2.1",
-    "@yungezeit/eslint-typescript": "^0.0.19",
+    "@yungezeit/eslint-typescript": "^0.0.23",
     "auto": "^11.1.1",
-    "boxen": "^7.1.1",
+    "boxen": "^8.0.1",
     "dedent": "^1.5.1",
+    "eslint-plugin-storybook": "10.0.2",
     "prettier": "^3.3.3",
     "prompts": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "storybook": "0.0.0-pr-26654-sha-49d01553",
+    "storybook": "10.0.2",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4",
-    "vite": "^5.3.5",
+    "vite": "^7.1.12",
     "vue": "^3.5.13",
-    "zx": "^7.2.3"
-  },
-  "overrides": {
-    "storybook": "0.0.0-pr-26654-sha-49d01553"
+    "zx": "^8.8.5"
   },
   "publishConfig": {
     "access": "public"
