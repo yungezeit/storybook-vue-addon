@@ -1,3 +1,15 @@
+# v0.0.5 (Tue Nov 04 2025)
+
+#### 🐛 Bug Fix
+
+- chore: upgrade to storybook 10.x.x [#3](https://github.com/yungezeit/storybook-vue-addon/pull/3) ([@Dschungelabenteuer](https://github.com/Dschungelabenteuer))
+
+#### Authors: 1
+
+- n028 ([@Dschungelabenteuer](https://github.com/Dschungelabenteuer))
+
+---
+
 # v0.0.4 (Thu Apr 10 2025)
 
 #### ⚠️ Pushed to `main`
