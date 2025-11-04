@@ -10,7 +10,7 @@ export const Tool = memo(function MyAddonSelector({ api, url }: { api: API; url:
   }, []);
 
   useEffect(() => {
-    api.setAddonShortcut(ADDON_ID, {
+    void api.setAddonShortcut(ADDON_ID, {
       label: 'Open documentation [F1]',
       defaultShortcut: ['F1'],
       actionName: 'documentation',
