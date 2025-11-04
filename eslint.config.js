@@ -5,6 +5,6 @@ import typescriptPreset from '@yungezeit/eslint-typescript';
 
 export default [
   ...typescriptPreset,
-  { ignoreFiles: ['scripts'] },
+  { ignores: ['dist', 'scripts', '.github', './preview.js', 'README.md'] },
   ...storybook.configs["flat/recommended"]
 ];

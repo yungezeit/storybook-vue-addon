@@ -12,6 +12,7 @@
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "strict": true,
+    "outDir": "dist",
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "noImplicitAny": true,
@@ -19,5 +20,6 @@
     "baseUrl": ".",
     "rootDir": "."
   },
-  "include": ["src/**/*", "tsup.config.ts"]
+  "exclude": ["dist"],
+  "include": ["src/**/*", "vite.config.ts", "tsup.config.ts", ".storybook/**/*"]
 }

@@ -11,7 +11,7 @@ addons.register(ADDON_ID, (api) => {
     title: 'Open documentation',
     match: ({ viewMode }) => !!viewMode?.match(/^(story)$/),
     render: () => {
-      const documentationUrl = useParameter('documentationUrl', undefined);
+      const documentationUrl = useParameter<string | undefined>('documentationUrl', undefined);
       return documentationUrl && <Tool api={api} url={documentationUrl} />;
     },
   });
