@@ -5,6 +5,6 @@ import typescriptPreset from '@yungezeit/eslint-typescript';
 
 export default [
   ...typescriptPreset,
-  { ignores: ['dist', 'scripts', '.github', './preview.js', 'README.md'] },
+  { ignores: ['dist', 'scripts', '.github', './preview.js', 'README.md', '.storybook/local-preset.ts'] },
   ...storybook.configs["flat/recommended"]
 ];
