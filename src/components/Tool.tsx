@@ -1,4 +1,4 @@
-import type { API } from 'storybook/internal/manager-api';
+import type { API } from 'storybook/manager-api';
 import React, { memo, useCallback, useEffect } from 'react';
 import { DocumentIcon } from '@storybook/icons';
 import { IconButton } from 'storybook/internal/components';

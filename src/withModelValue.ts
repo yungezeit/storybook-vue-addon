@@ -24,7 +24,7 @@ export const withModelValue: DecoratorFunction = (storyFn, context) => {
     if (!vueEmit?.startsWith('update:')) return acc;
     const [, modelName] = vueEmit.split('update:');
     const modifiers = Object.keys(componentProps[`${modelName}Modifiers`] ?? {});
-    acc.push({ name: modelName, modifiers });
+    acc.push({ name: modelName!, modifiers });
     return acc;
   }, []);
 
