@@ -55,9 +55,9 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.2",
-    "@storybook/addon-docs": "10.0.2",
-    "@storybook/addon-links": "10.0.2",
-    "@storybook/vue3-vite": "10.0.2",
+    "@storybook/addon-docs": "10.1.2",
+    "@storybook/addon-links": "10.1.2",
+    "@storybook/vue3-vite": "10.1.2",
     "@types/node": "^20",
     "@types/react": "^18.2.65",
     "@types/react-dom": "^18.2.21",
@@ -68,12 +68,12 @@
     "boxen": "^8.0.1",
     "dedent": "^1.5.1",
     "eslint": "^9.39.1",
-    "eslint-plugin-storybook": "10.0.2",
+    "eslint-plugin-storybook": "10.1.2",
     "prettier": "^3.3.3",
     "prompts": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "storybook": "10.0.2",
+    "storybook": "10.1.2",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4",
     "vite": "^7.1.12",
@@ -85,14 +85,12 @@
     "access": "public"
   },
   "bundler": {
-    "exportEntries": [
-      "src/index.ts"
-    ],
     "managerEntries": [
       "src/manager.tsx"
     ],
     "previewEntries": [
-      "src/preview.ts"
+      "src/preview.ts",
+      "src/index.ts"
     ],
     "nodeEntries": [
       "src/preset.ts"
